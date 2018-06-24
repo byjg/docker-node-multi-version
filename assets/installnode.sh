@@ -1,18 +1,11 @@
 #!/usr/bin/env bash
 
-if [ -z "$1" ]
-then
-    echo "Node version is required"
-    exit 1
-fi
+source nodelist
 
 source $NVM_DIR/nvm.sh
 
-nvm install $1
-nvm use $1
-shift
-while [ ! -z "$1" ]
+for index in ${!NODE_VERSION_LIST[*]}
 do
-   npm install -g $1
-   shift
+    nvm install ${NODE_VERSION_LIST[$index]}
 done
+

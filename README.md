@@ -3,17 +3,17 @@
 This image provide different node versions.
 
 The versions available are:
+ - 6.14.3 (LTS: Boron)
  - 7.10.1
- - 8.11.2
+ - 8.11.3 (LTS: Carbon)
  - 9.11.1
- - 10.2.0
+ - 10.5.0
 
 ## Running
 
-Just set the environment variable "NODE_VERSION" with the desired node version to use:
+Just set the environment variable "NODE_VERSION" with the desired major node version to use:
 
 ```
-docker run -it --rm -e NODE_VERSION=9.11.1 byjg/node-multi-version:latest bash 
+docker run -it --rm -e NODE_VERSION=9 byjg/node-multi-version:latest bash 
 ```
-
 

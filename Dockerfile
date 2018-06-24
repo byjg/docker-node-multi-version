@@ -23,15 +23,13 @@ RUN mkdir -p $NVM_DIR
 COPY assets/entrypoint.sh /
 COPY assets/installnode.sh /usr/bin/installnode
 COPY assets/setnode.sh /usr/bin/setnode
+COPY assets/nodelist.sh /usr/bin/nodelist
 
 # Install NodeJS
 RUN curl https://raw.githubusercontent.com/creationix/nvm/$NVM_VERSION/install.sh | bash
-RUN installnode 7.10.1
-RUN installnode 8.11.2
-RUN installnode 9.11.1
-RUN installnode 10.2.0
+RUN installnode
 
 # Setting default Node Version
-ENV NODE_VERSION 10.2.0
+ENV NODE_VERSION 10
 
 ENTRYPOINT [ "/entrypoint.sh" ]
