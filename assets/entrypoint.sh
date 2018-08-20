@@ -2,4 +2,4 @@
 
 source setnode $NODE_VERSION
 
-exec ${@}
+exec "$@"

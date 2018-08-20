@@ -3,11 +3,13 @@
 This image provide different node versions.
 
 The versions available are:
- - 6.14.3 (LTS: Boron)
+ - 4.9.1 (LTS: Argon)
+ - 5.12.0
+ - 6.14.4 (LTS: Boron)
  - 7.10.1
- - 8.11.3 (LTS: Carbon)
- - 9.11.1
- - 10.5.0
+ - 8.11.4 (LTS: Carbon)
+ - 9.11.2
+ - 10.9.0
 
 ## Running
 
