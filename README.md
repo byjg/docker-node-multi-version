@@ -11,7 +11,7 @@ The versions available are:
  - 9.11.2
  - 10.9.0
 
-## Running
+# Running
 
 Just set the environment variable "NODE_VERSION" with the desired major node version to use:
 
